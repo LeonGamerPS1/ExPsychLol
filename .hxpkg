@@ -1,0 +1,48 @@
+[
+	{
+		"profile": "default",
+		"pkgs": [
+			{
+				"name": "hxcpp",
+				"link": "https://github.com/HaxeFoundation/hxcpp.git"
+			},
+			{
+				"name": "lime",
+				"version": "8.2.1"
+			},
+			{
+				"name": "openfl",
+				"version": "9.4.2"
+			},
+			{
+				"name": "flixel",
+				"link": "https://github.com/HaxeFlixel/flixel.git",
+				"branch": "dev"
+			},
+			{
+				"name": "flixel-addons",
+				"version": "4.0.1"
+			},
+			{
+				"name": "flixel-ui",
+				"version": "2.6.4"
+			},
+			{
+				"name": "hscript"
+			},
+			{
+				"name": "linc_luajit",
+				"link": "https://github.com/superpowers04/linc_luajit.git"
+			},
+			{
+				"name": "discord_rpc",
+				"link": "https://github.com/superpowers04/linc_discord-rpc.git"
+			},
+			{
+				"name": "flixel-animate",
+				"link": "https://github.com/MaybeMaru/flixel-animate",
+				"branch": "experimental"
+			}
+		]
+	}
+]
