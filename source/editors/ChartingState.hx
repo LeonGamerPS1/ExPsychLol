@@ -43,12 +43,12 @@ import openfl.utils.ByteArray;
 import openfl.utils.Assets as OpenFlAssets;
 import lime.media.AudioBuffer;
 import haxe.io.Bytes;
-import flash.geom.Rectangle;
+import openfl.geom.Rectangle;
 import flixel.util.FlxSort;
 #if sys
 import sys.io.File;
 import sys.FileSystem;
-import flash.media.Sound;
+import openfl.media.Sound;
 #end
 import scripts.*;
 using StringTools;
