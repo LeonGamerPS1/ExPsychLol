@@ -1175,7 +1175,9 @@ class PlayState extends MusicBeatState
 				#else
 				trace("preloaded");
 				#end
+				
 				for(sprite in sprites)
+					if(sprite != null)
 					remove(sprite);
 			}
 		}
@@ -3957,6 +3959,7 @@ class PlayState extends MusicBeatState
 			notes.forEachAlive(function(daNote:Note)
 			{
 				var field = daNote.playField;
+
 
 				var strumX:Float = field.members[daNote.noteData].x;
 				var strumY:Float = field.members[daNote.noteData].y;

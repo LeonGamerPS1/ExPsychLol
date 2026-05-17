@@ -440,6 +440,17 @@ class CharacterEditorState extends MusicBeatState
 			ghostChar.flipX = char.flipX;
 		};
 
+		var check_player = new FlxUICheckBox(10, 90, null, null, "Is Player", 100);
+		check_player.checked = daAnim.startsWith('bf');
+		check_player.callback = function()
+		{
+			char.playable = !char.playable;
+			char.flipX = !char.flipX;
+			updatePointerPos();
+			reloadBGs();
+			ghostChar.flipX = char.flipX;
+		};
+
 		charDropDown = new FlxUIDropDownMenuCustom(10, 30, FlxUIDropDownMenuCustom.makeStrIdLabelArray([''], true), function(character:String)
 		{
 			daAnim = characterList[Std.parseInt(character)];

@@ -52,12 +52,15 @@ class MusicBeatState extends FlxUIState
 	{
 		//everyStep();
 		var oldStep:Int = curStep;
+		var oldBeat:Int = curBeat;
 
 		updateCurStep();
 		updateBeat();
 
 		if (oldStep != curStep && curStep > 0)
 			stepHit();
+		if (oldBeat != curBeat && curBeat > 0)
+			beatHit();
 
 		if(FlxG.save.data != null) FlxG.save.data.fullscreen = FlxG.fullscreen;
 
@@ -98,8 +101,7 @@ class MusicBeatState extends FlxUIState
 
 	public function stepHit():Void
 	{
-		if (curStep % 4 == 0)
-			beatHit();
+		
 	}
 
 	public function beatHit():Void

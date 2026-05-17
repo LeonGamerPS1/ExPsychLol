@@ -14,7 +14,7 @@ export/*
 
 
 .haxelib/*
-.haxelib/*
+.haxelib/hxcpp/*
 
 .vscode/*
 *.code-workspace
